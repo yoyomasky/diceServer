@@ -1,0 +1,18 @@
+{
+  "name": "dice_server",
+  "version": "1.0.0",
+  "description": "diceServer",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dice"
+  ],
+  "author": "Somewhere",
+  "license": "ISC",
+    "dependencies": {
+      "crypto": "^1.0.1",
+      "express": "^4.16.4"
+    }
+}
