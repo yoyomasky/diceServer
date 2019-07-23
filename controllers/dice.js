@@ -11,7 +11,7 @@ var consoleLog = Log.getLogger('consolelog');
 
 //dice服务...start
 async function diceServer() {
-    console.log("nextDiceBetId:", nextDiceBetId);
+    consoleLog.info("nextDiceBetId:", nextDiceBetId);
     nextDiceBetId = await myUtils.getNextDiceBetId(nextDiceBetId);
     
     setTimeout(async ()=>{

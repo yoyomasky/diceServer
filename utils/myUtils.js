@@ -43,6 +43,9 @@ module.exports = {
         "upper_bound": '-1' 
         }).catch(async err=>{
             errlog.error('查询投注表失败:'+err);
+            setTimeout(async (nextDiceBetId)=>{
+                this.getNextDiceBetId(nextDiceBetId);
+            },5000);
         });
         if (tableinfo.rows.length > 0) {
             nextDiceBetId = tableinfo.rows[tableinfo.rows.length - 1].id + 1

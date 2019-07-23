@@ -23,7 +23,7 @@ log4js.configure({
         },
     oth: {//其他日志
         type: 'dateFile',
-        filename: __dirname + '/serverlog/othlog/oth',
+        filename: __dirname + '/../serverlog/othlog/oth',
         pattern: '-yyyy-MM-dd.log',
         encoding : 'utf-8',
         alwaysIncludePattern: true

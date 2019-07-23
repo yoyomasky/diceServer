@@ -16,7 +16,12 @@ const signatureProvider = new JsSignatureProvider([privateKey]);
 
 
 // rpc 对象可以运行 eos的rpc命令
-const kylinGetInfoLink = 'http://kylin.fn.eosbixin.com';
+// const kylinGetInfoLink = 'http://kylin.fn.eosbixin.com';
+// const kylinGetInfoLink = 'https://api.kylin.alohaeos.com';
+// const kylinGetInfoLink = 'https://kylin.eoscanada.com';
+const kylinGetInfoLink = 'http://kylin.meet.one:8888';
+// const kylinGetInfoLink = 'https://api-kylin.eosasia.one';
+
 const rpc = new JsonRpc(kylinGetInfoLink, { fetch });
 
 
